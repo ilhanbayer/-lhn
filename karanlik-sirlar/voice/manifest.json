@@ -1,0 +1,394 @@
+{
+ "a01": {
+  "sim": 1.0,
+  "dur": 1.72,
+  "asr": "Bir memleket düşünün.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a01.flac"
+ },
+ "a02": {
+  "sim": 1.0,
+  "dur": 1.36,
+  "asr": "Gündüzü Cennet",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a02.flac"
+ },
+ "a03": {
+  "sim": 0.857,
+  "dur": 1.16,
+  "asr": "Aman Kece'si",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a03.flac"
+ },
+ "a04": {
+  "sim": 1.0,
+  "dur": 1.44,
+  "asr": "Bambaşka bir alem.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a04.flac"
+ },
+ "a05": {
+  "sim": 1.0,
+  "dur": 2.6,
+  "asr": "Burası Yahyalı.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a05.flac"
+ },
+ "a06": {
+  "sim": 1.0,
+  "dur": 3.04,
+  "asr": "Burada her kayanın bir hikayesi.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a06.flac"
+ },
+ "a07": {
+  "sim": 0.95,
+  "dur": 2.64,
+  "asr": "Her ağacım bir sırrı.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a07.flac"
+ },
+ "a08": {
+  "sim": 1.0,
+  "dur": 4.4,
+  "asr": "ve bazı gecelerin anlatılmaya cesaret edilemeyen hatıraları var.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a08.flac"
+ },
+ "a09": {
+  "sim": 1.0,
+  "dur": 2.2,
+  "asr": "Kimi gördüğünü anlatamamış.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a09.flac"
+ },
+ "a10": {
+  "sim": 1.0,
+  "dur": 3.72,
+  "asr": "Kimi yaşadıklarına kimseyi inandıramamış.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a10.flac"
+ },
+ "a11": {
+  "sim": 1.0,
+  "dur": 2.6,
+  "asr": "Ama bazı hikayeler var ki...",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a11.flac"
+ },
+ "a12": {
+  "sim": 1.0,
+  "dur": 3.6,
+  "asr": "Aradan yıllar geçse de unutulmamış.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/a12.flac"
+ },
+ "b01": {
+  "sim": 0.957,
+  "dur": 2.28,
+  "asr": "Yahyalının yâilalarında",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b01.flac"
+ },
+ "b02": {
+  "sim": 0.982,
+  "dur": 3.24,
+  "asr": "Beşbüyük Ardıcın Gölgesinde.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b02.flac"
+ },
+ "b03": {
+  "sim": 1.0,
+  "dur": 2.24,
+  "asr": "Kanlı Ardıç.",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b03.flac"
+ },
+ "b04": {
+  "sim": 1.0,
+  "dur": 3.36,
+  "asr": "Burası sıradan bir ağaçlık değil.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b04.flac"
+ },
+ "b05": {
+  "sim": 1.0,
+  "dur": 2.32,
+  "asr": "Bir makam.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b05.flac"
+ },
+ "b06": {
+  "sim": 0.901,
+  "dur": 3.64,
+  "asr": "Burada yatanın şimdi olduğu söylenir.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b06.flac"
+ },
+ "b07": {
+  "sim": 1.0,
+  "dur": 3.32,
+  "asr": "Ama burayı asıl gizemli yapan şey...",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b07.flac"
+ },
+ "b08": {
+  "sim": 1.0,
+  "dur": 3.68,
+  "asr": "hakkında anlatılanlar.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b08.flac"
+ },
+ "b09": {
+  "sim": 0.889,
+  "dur": 2.28,
+  "asr": "Rivayet e gire.",
+  "seed": 37,
+  "ok": true,
+  "file": "voice/b09.flac"
+ },
+ "b10": {
+  "sim": 0.952,
+  "dur": 3.28,
+  "asr": "Bir gün bir adam bu ağaçlardan uduğun keser.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b10.flac"
+ },
+ "b11": {
+  "sim": 1.0,
+  "dur": 5.68,
+  "asr": "Topladığı odunları çadırına taşır.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b11.flac"
+ },
+ "b12": {
+  "sim": 1.0,
+  "dur": 1.12,
+  "asr": "Gece Olur.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b12.flac"
+ },
+ "b13": {
+  "sim": 0.933,
+  "dur": 2.8,
+  "asr": "Daha sessizliğe bürünür.",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b13.flac"
+ },
+ "b14": {
+  "sim": 1.0,
+  "dur": 2.28,
+  "asr": "Sabah uyandığında ise",
+  "seed": 37,
+  "ok": true,
+  "file": "voice/b14.flac"
+ },
+ "b15": {
+  "sim": 1.0,
+  "dur": 1.52,
+  "asr": "Odunlar yoktur.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b15.flac"
+ },
+ "b16": {
+  "sim": 1.0,
+  "dur": 1.84,
+  "asr": "Önce şaşırır.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b16.flac"
+ },
+ "b17": {
+  "sim": 1.0,
+  "dur": 3.4,
+  "asr": "Sonra aynı ağaçlardan yeniden odun keser.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b17.flac"
+ },
+ "b18": {
+  "sim": 1.0,
+  "dur": 4.4,
+  "asr": "Çadırına taşır.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b18.flac"
+ },
+ "b19": {
+  "sim": 0.875,
+  "dur": 2.48,
+  "asr": "Ama herkes sabah.",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b19.flac"
+ },
+ "b20": {
+  "sim": 1.0,
+  "dur": 3.84,
+  "asr": "Yine aynı manzara.",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b20.flac"
+ },
+ "b21": {
+  "sim": 0.912,
+  "dur": 3.44,
+  "asr": "O dünler ortadan kaybolmuştur.",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b21.flac"
+ },
+ "b22": {
+  "sim": 0.72,
+  "dur": 2.4,
+  "asr": "3. kez dener",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b22.flac"
+ },
+ "b23": {
+  "sim": 1.0,
+  "dur": 1.48,
+  "asr": "Ve yine...",
+  "seed": 37,
+  "ok": true,
+  "file": "voice/b23.flac"
+ },
+ "b24": {
+  "sim": 1.0,
+  "dur": 2.96,
+  "asr": "Hiçbir şey kalmamıştır.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b24.flac"
+ },
+ "b25": {
+  "sim": 0.929,
+  "dur": 2.76,
+  "asr": "İşte o zaman korku yakabılır.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b25.flac"
+ },
+ "b26": {
+  "sim": 0.975,
+  "dur": 4.56,
+  "asr": "Bir daha o ağaçlardan tek bir dal bir almaya cesaret edemez.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b26.flac"
+ },
+ "b27": {
+  "sim": 1.0,
+  "dur": 2.44,
+  "asr": "Şimdi bir düşünün.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b27.flac"
+ },
+ "b28": {
+  "sim": 1.0,
+  "dur": 2.48,
+  "asr": "Gece yarısı.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b28.flac"
+ },
+ "b29": {
+  "sim": 1.0,
+  "dur": 2.12,
+  "asr": "Torosların ortasında.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b29.flac"
+ },
+ "b30": {
+  "sim": 0.966,
+  "dur": 4.16,
+  "asr": "Etrafınızda kimseden iser yok.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b30.flac"
+ },
+ "b31": {
+  "sim": 0.903,
+  "dur": 3.36,
+  "asr": "Ve sabah karşıya.",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b31.flac"
+ },
+ "b32": {
+  "sim": 0.97,
+  "dur": 4.2,
+  "asr": "Bir gece önce kendilerinizle topladığınız odunlar.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b32.flac"
+ },
+ "b33": {
+  "sim": 1.0,
+  "dur": 0.6,
+  "asr": "Yok!",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b33.flac"
+ },
+ "b34": {
+  "sim": 1.0,
+  "dur": 0.84,
+  "asr": "Peki.",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b34.flac"
+ },
+ "b35": {
+  "sim": 1.0,
+  "dur": 2.72,
+  "asr": "Sizce o odunları kim aldı?",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b35.flac"
+ },
+ "b36": {
+  "sim": 1.0,
+  "dur": 2.84,
+  "asr": "Belki de kanlı ardıçın sırrı.",
+  "seed": 11,
+  "ok": true,
+  "file": "voice/b36.flac"
+ },
+ "b37": {
+  "sim": 0.906,
+  "dur": 3.0,
+  "asr": "hala çözümü iyi bekliyordur.",
+  "seed": 23,
+  "ok": true,
+  "file": "voice/b37.flac"
+ }
+}
