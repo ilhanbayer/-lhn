@@ -1,0 +1,11 @@
+{
+  "name": "yahyali-video",
+  "private": true,
+  "description": "Yahyalı 60 sn tanıtım videosu render kaynakları",
+  "dependencies": {
+    "@fontsource/bebas-neue": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
+    "turkey-map-react": "^2.4.4"
+  }
+}
