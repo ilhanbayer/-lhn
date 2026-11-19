@@ -456,7 +456,7 @@ function endCard(t, t0, alpha) {
   txt('KAYSERİ  ·  TÜRKİYE', W / 2, H / 2 - 150, { size: 24, weight: 600, track: 14, align: 'center', alpha: a * E.out(seg(t, t0 + 0.5, t0 + 1.3)), color: GOLD2 });
   const ca = a * E.out(seg(t, t0 + 1.6, t0 + 2.4)) * 0.85;
   txt('Görseller: özgün dijital illüstrasyon ve animasyon   ·   Harita verisi: turkey-map-react (MIT)', W / 2, H - 92, { size: 16, weight: 300, align: 'center', alpha: ca });
-  txt('Seslendirme: Piper TTS (tr_TR · fahrettin)   ·   Müzik ve ses efektleri: özgün sentez', W / 2, H - 62, { size: 16, weight: 300, align: 'center', alpha: ca });
+  txt('Müzik ve ses efektleri: özgün sentez', W / 2, H - 62, { size: 16, weight: 300, align: 'center', alpha: ca });
 }
 
 // ---------------------------------------------------------------- shot list (illustrated scenes from land.js)
@@ -472,8 +472,7 @@ const SHOTS = [
   { t0: 25.3, t1: 28.5, scene: 'kapuz', cam: CAM(1.22, 1.05), fade: 0, mode: 'mist' },
   { t0: 28.2, t1: 31.3, scene: 'kapuz_close', cam: CAM(1.06, 1.16, 160, -130), fade: 0.5, mode: 'mist' },
   { t0: 31.0, t1: 34.05, scene: 'canyon', cam: CAM(1.16, 1.05, -170, 120), fade: 0.3 },
-  { t0: 33.75, t1: 37.8, scene: 'river', cam: CAM(1.04, 1.12, -110, 130), fade: 0.6 },
-  { t0: 37.5, t1: 39.7, scene: 'derebag', cam: CAM(1.14, 1.04), fade: 0.45, mode: 'mist' },
+  { t0: 33.75, t1: 39.9, scene: 'river', cam: CAM(1.04, 1.16, -130, 170), fade: 0.6 },
   { t0: 39.4, t1: 41.6, scene: 'yayla', cam: CAM(1.04, 1.12, 110, -90), fade: 0.45, mode: 'dust' },
   { t0: 41.3, t1: 44.95, special: 'weave', fade: 0.45 },
   { t0: 44.6, t1: 48.2, special: 'rug', fade: 0.45 },
@@ -530,11 +529,10 @@ window.renderFrame = function (t) {
   mainTitle(t, 11.6, 14.75);
   lowerThird(t, 15.3, 18.6, 'ALADAĞLAR', 'Aladağlar Milli Parkı · Toros Dağları');
   counter(t, 18.75, 21.65, 19.15, 20.6);
-  lowerThird(t, 22.3, 25.2, 'DEREBAĞ ŞELALESİ', 'Kışın biriken kar, baharda suya dönüşür');
+  lowerThird(t, 22.3, 25.2, 'DEREBAĞ ŞELALESİ', 'Kışın biriken kar suya dönüşür');
   sectionTitle(t, 25.65, 28.25, 'KAPUZBAŞI', 'ŞELALELERİ');
   chips(t, 28.45, 31.0, ['7 ŞELALE', '30–76 m', 'ALADAĞLAR MİLLİ PARKI'], '37°46′ K  ·  35°23′ D');
-  lowerThird(t, 31.55, 36.9, 'ZAMANTI IRMAĞI', 'Seyhan\'ın en büyük kolu'); riverLine(t, 31.55, 36.9);
-  lowerThird(t, 37.85, 39.4, 'DEREBAĞ', 'Tabiat Parkı');
+  lowerThird(t, 31.55, 39.2, 'ZAMANTI IRMAĞI', 'Seyhan\'ın en büyük kolu'); riverLine(t, 31.55, 39.2);
   lowerThird(t, 39.65, 41.2, 'YAYLALAR', 'Kıl çadırlar, serin yaz meraları');
   txt('İ L M E K', 330, 500, { size: 46, weight: 300, track: 8, align: 'center', alpha: env(t, 41.9, 44.6, 0.6, 0.4) });
   txt('İ L M E K', 330, 570, { size: 46, weight: 300, track: 8, align: 'center', alpha: env(t, 42.3, 44.6, 0.6, 0.4) });

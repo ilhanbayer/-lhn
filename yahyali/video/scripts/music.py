@@ -4,13 +4,22 @@ from scipy import signal
 SR = 48000
 W = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 TL = json.load(open(f'{W}/timeline.json'))
-T = TL['duration']; N = int(SR * T); S = TL['sections']
+T = TL['duration']; S = TL['sections']
+# optional time-warp (provided narration): events are designed on the original 60 s timeline and mapped to the new one
+WARP = None
+if os.path.exists(f'{W}/warp.json'):
+    import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import warp_util
+    WARP, _f, G = warp_util.load(f'{W}/warp.json'); T = WARP['duration']
+else:
+    G = lambda t: t
+N = int(SR * T)
 BEAT = 60 / TL['bpm']; BAR = 4 * BEAT; A0 = TL['barAnchor']
 rng = np.random.default_rng(11)
 
 def midi(m): return 440.0 * 2 ** ((m - 69) / 12)
 def bus(): return np.zeros((N, 2))
-def put(buf, x, t0, g=1.0, pan=0.0):
+def put(buf, x, t0, g=1.0, pan=0.0, warp=True):
+    if warp: t0 = G(t0)
     if x.ndim == 1:
         l = np.cos((pan + 1) * np.pi / 4) * 1.41421; r = np.sin((pan + 1) * np.pi / 4) * 1.41421
         x = np.stack([x * l, x * r], 1)
@@ -157,15 +166,15 @@ def lfo_noise(n, rate=0.25, depth=0.4):
     k = max(4, int(n / SR * rate) + 4); pts = rng.uniform(1 - depth, 1, k)
     return np.interp(np.linspace(0, k - 1, n), np.arange(k), pts)
 def region_env(t0, t1, fade_in, fade_out):
-    n = int((t1 - t0) * SR); return smooth_env(n, fade_in, fade_out)
+    n = int((G(t1) - G(t0)) * SR); return smooth_env(n, fade_in, fade_out)
 def water(t0, t1, level, roar=True, fi=0.6, fo=0.8):
-    n = int((t1 - t0) * SR)
+    n = int((G(t1) - G(t0)) * SR)
     if roar: x = 0.7 * bp(pink(n), 250, 6000) + 0.5 * lp(brown(n), 220)
     else: x = 0.8 * hp(pink(n), 600) * lfo_noise(n, 3.0, 0.5)[:, None] + 0.2 * lp(brown(n), 300)
     x = x / np.abs(x).max() * lfo_noise(n, 0.4, 0.25)[:, None]
     return x * region_env(t0, t1, fi, fo)[:, None] * level
 def wind(t0, t1, level, fi=1.0, fo=1.0):
-    n = int((t1 - t0) * SR); x = np.zeros((n, 2))
+    n = int((G(t1) - G(t0)) * SR); x = np.zeros((n, 2))
     for ch in (0, 1):
         base = pink(n, 1)[:, 0]; mod = lfo_noise(n, 0.35, 0.8)
         x[:, ch] = bp(base, 250, 1400) * mod + 0.4 * lp(brown(n, 1)[:, 0], 180)
@@ -192,13 +201,13 @@ for tt, m in [(1.0, 74), (1.75, 69), (2.5, 77), (3.6, 76), (4.4, 72), (5.2, 74),
 for k in range(7):
     put(music, strings_low(38, 0.25, 0.10), 7.6 + k * BEAT)
 put(music, pad(CH['Dm'][1], 3.6, fc=900, amp=0.05, a=1.0, r=0.6), 7.6)
-put(fx, riser(1.3, 0.16), S['title'] - 1.3)
-put(fx, rev_cym(1.2, 0.14), S['title'] - 1.2)
+put(fx, riser(1.3, 0.16), G(S['title']) - 1.3, warp=False)
+put(fx, rev_cym(1.2, 0.14), G(S['title']) - 1.2, warp=False)
 put(fx, ping(86, 0.16), 8.6, pan=-0.2)          # Kayseri pin
 put(fx, ping(81, 0.2), 10.55, pan=0.2)          # Yahyali pin
-put(fx, boom(0.65, 0.8), S['title'])
-put(music, pad(CH['Dm'][1] + [74], 3.0, fc=2000, amp=0.045, a=0.05, r=2.2), S['title'])
-put(music, strings_low(26, 2.5, 0.15), S['title'])
+put(fx, boom(0.5, 0.55), S['title'])
+put(music, pad(CH['Dm'][1] + [74], 3.0, fc=1800, amp=0.032, a=0.05, r=2.2), S['title'])
+put(music, strings_low(26, 2.5, 0.10), S['title'])
 # mountains: chords bars 0..3 (Dm Bb F C) soft
 prog = ['Dm', 'Bb', 'F', 'C', 'Dm', 'Bb', 'F', 'C', 'Dm', 'Gm', 'Dm', 'Bb', 'A']
 for k, c in enumerate(prog):
@@ -223,8 +232,8 @@ for k, c in enumerate(prog):
 for i, m in enumerate([84, 88, 91, 96, 91, 88, 84, 79, 84, 88]):
     put(music, bell(m, 2.5, 0.07), S['snow'] + 0.15 + i * BEAT / 2 * 1.05, pan=np.sin(i) * 0.5)
 # big hit into Kapuzbasi
-put(fx, rev_cym(2.0, 0.2), S['kapuzbasi'] - 2.0)
-put(fx, riser(1.6, 0.14), S['kapuzbasi'] - 1.6)
+put(fx, rev_cym(2.0, 0.2), G(S['kapuzbasi']) - 2.0, warp=False)
+put(fx, riser(1.6, 0.14), G(S['kapuzbasi']) - 1.6, warp=False)
 put(fx, boom(0.6, 0.9), S['kapuzbasi'])
 # drums 25.3 - 35.97 epic, 35.97 - 41.3 lighter
 for k in range(4, 10):
@@ -262,7 +271,7 @@ for k in (10, 11, 12):
 for i in range(10):   # weaving: comb knocks in rhythm with animation
     put(fx, knock(0.18), S['hali'] + 0.35 + i * BEAT / 2 * (1.0 if i < 6 else 1.2), pan=0.1)
 # break + three hits (DAG / SU / EMEK)
-put(fx, rev_cym(0.45, 0.25), S['dag'] - 0.45)
+put(fx, rev_cym(0.45, 0.25), G(S['dag']) - 0.45, warp=False)
 for key, c, extra in [('dag', 'Dm', 0), ('su', 'Bb', 0), ('emek', 'C', 0)]:
     tt = S[key]
     put(fx, boom(0.42, 0.45), tt)
@@ -270,15 +279,15 @@ for key, c, extra in [('dag', 'Dm', 0), ('su', 'Bb', 0), ('emek', 'C', 0)]:
     put(music, strings_low(CH[c][0], 0.6, 0.14), tt)
 put(fx, sweep_noise(1.2, 3000, 300, lambda u: np.exp(-4 * u) * np.clip(u * 30, 0, 1), 0.2), S['su'])   # splash
 # final: swell to D major (Picardy) and end card
-put(fx, riser(1.3, 0.12), S['final'] - 0.8)
-put(music, pad(CH['D'][1], T - S['final'] - 1.6, fc=2200, amp=0.075, a=1.0, r=2.6), S['final'])
+put(fx, riser(1.3, 0.12), G(S['final']) - 0.8, warp=False)
+put(music, pad(CH['D'][1], T - G(S['final']) - 1.6, fc=2200, amp=0.075, a=1.0, r=2.6), S['final'])
 put(music, strings_low(26, 6.0, 0.16), 52.4)
 put(fx, boom(0.4, 1.2), S['final'])
 for tt, m in [(55.2, 74), (55.9, 69), (56.6, 78), (57.4, 81), (58.3, 74)]:
     put(music, piano(m, 4.0, 0.15), tt, pan=rng.uniform(-0.25, 0.25))
 # transitions whooshes
 for tt in [S['map'], S['aladaglar'], S['snow'], S['zamanti'], S['derebag'], S['hali'], S['final'], S['endcard']]:
-    put(fx, whoosh(1.0, 0.22), tt - 0.6)
+    put(fx, whoosh(1.0, 0.22), G(tt) - 0.6, warp=False)
 # ambience
 put(amb, water(0.0, 7.9, 0.10, True, 2.0, 0.8), 0.0)
 put(amb, wind(7.2, 11.8, 0.05), 7.2)
@@ -292,12 +301,19 @@ put(amb, water(51.7, 56.0, 0.06, True, 0.8, 1.8), 51.7)
 put(amb, wind(54.5, 60.0, 0.04, 1.0, 3.0), 54.5)
 
 # =============== VOICE ===============
-for nid, t0 in TL['narration'].items():
-    x, sr = sf.read(f'{W}/audio/fahrettin/{nid}.wav')
-    x = signal.resample_poly(x, 320, 147)
-    x = hp(x, 75); x = peq(x, 180, 1.5, 0.8); x = peq(x, 3200, 2.5, 1.0); x = peq(x, 7000, -2.0, 1.0)
-    x = x / (np.sqrt(np.mean(x ** 2)) + 1e-9) * 0.085
-    put(voice, x, t0)
+if WARP:
+    x, sr = sf.read(f'{W}/voice2/voice_edit48.wav')
+    x = hp(x, 70); x = peq(x, 3000, 1.0, 1.0)
+    fr = int(0.05 * SR); e = np.sqrt(np.convolve(x ** 2, np.ones(fr) / fr, 'same')); act = e > e.max() * 0.08
+    x = x / (np.sqrt(np.mean(x[act] ** 2)) + 1e-9) * 0.085
+    put(voice, x, WARP['voiceOffset'], warp=False)
+else:
+    for nid, t0 in TL['narration'].items():
+        x, sr = sf.read(f'{W}/audio/fahrettin/{nid}.wav')
+        x = signal.resample_poly(x, 320, 147)
+        x = hp(x, 75); x = peq(x, 180, 1.5, 0.8); x = peq(x, 3200, 2.5, 1.0); x = peq(x, 7000, -2.0, 1.0)
+        x = x / (np.sqrt(np.mean(x ** 2)) + 1e-9) * 0.085
+        put(voice, x, t0)
 # gentle compression on voice bus
 env = np.sqrt(np.maximum(lp(voice.mean(1) ** 2, 12), 0) + 1e-12); thr = 0.06
 g = np.where(env > thr, (thr / env) ** (1 - 1 / 2.5), 1.0); voice *= g[:, None]

@@ -1,59 +1,64 @@
 1
-00:00:01,400 --> 00:00:03,856
+00:00:01,448 --> 00:00:04,381
 Dağın kalbinden fışkıran yedi şelale...
 
 2
-00:00:04,200 --> 00:00:07,201
+00:00:04,691 --> 00:00:08,011
 Toros Dağları'nın eteğinde, saklı bir cennet.
 
 3
-00:00:08,200 --> 00:00:10,877
+00:00:08,291 --> 00:00:11,261
 Kayseri'nin seksen kilometre güneyinde...
 
 4
-00:00:12,250 --> 00:00:13,175
+00:00:11,311 --> 00:00:12,321
 Yahyalı.
 
 5
-00:00:15,200 --> 00:00:18,479
-Toroslar'ın en görkemli sıradağlarından biri: Aladağlar.
+00:00:13,981 --> 00:00:18,571
+Toroslar'ın en görkemli sıradağlarından biri:
+Aladağlar.
 
 6
-00:00:18,700 --> 00:00:21,429
+00:00:18,631 --> 00:00:22,191
 Zirveleri 3.700 metreyi aşar.
 
 7
-00:00:21,900 --> 00:00:25,025
-Kışın biriken kar, baharda suya dönüşür.
+00:00:22,431 --> 00:00:25,121
+Kışın biriken kar suya dönüşür.
 
 8
-00:00:25,800 --> 00:00:30,863
+00:00:25,241 --> 00:00:31,031
 Bu sular, kaya duvarlarının arasından fışkırarak
 Kapuzbaşı Şelaleleri'ni oluşturur.
 
 9
-00:00:31,200 --> 00:00:37,201
-Ardından Seyhan'ın en büyük kolu olan Zamantı Irmağı'na karışır
-ve derin kanyonlar boyunca akar.
+00:00:31,191 --> 00:00:35,981
+Ardından Seyhan'ın en büyük kolu olan
+Zamantı Irmağı'na karışır
 
 10
-00:00:37,700 --> 00:00:41,145
-Derebağ'ın serin vadileri...
-yaylalarda kurulan kıl çadırlar...
+00:00:36,301 --> 00:00:38,961
+ve derin kanyonlar boyunca akar.
 
 11
-00:00:41,900 --> 00:00:45,473
-Ve ilmek ilmek, tamamen yünden dokunan Yahyalı halısı.
+00:00:39,771 --> 00:00:41,711
+Yaylalarda kurulan çadırlar...
 
 12
-00:00:45,700 --> 00:00:47,872
-Bu toprakların tescilli mirası.
+00:00:41,761 --> 00:00:46,851
+Ve ilmek ilmek, tamamen yünden dokunan
+Yahyalı halısı.
 
 13
-00:00:48,850 --> 00:00:51,773
-Dağ. Su. Ve emek.
+00:00:47,111 --> 00:00:49,861
+Bu toprakların tescilli mirası.
 
 14
-00:00:52,400 --> 00:00:55,332
-Yahyalı... keşfedilmeyi bekliyor.
+00:00:50,321 --> 00:00:52,501
+Dağ. Su. Emek.
+
+15
+00:00:52,811 --> 00:00:55,721
+Ve Yahyalı keşfedilmeyi bekliyor.
 
