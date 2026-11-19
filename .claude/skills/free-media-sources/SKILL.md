@@ -24,6 +24,8 @@ Her varlığın kaynağını, yazarını ve lisansını künyeye (`ACIKLAMA.md`)
 - **ElevenLabs Music** (`elevenlabs`, API anahtarı ve plan şartları) ile **ACE-Step** (`acestep`, açık model, GPU gerekir).
 
 ## Ses efektleri
+- **`video-toolkit/sfx/`:** sfx-kit, 320 ses, CC0, atıf gerekmez. Kategoriler: whoosh, pop, kutlama, belirme, bildirim, riser, darbe vb. Her sesin eşleme noktası (`sync`) `sounds.json` içinde; kataloğu `catalogue.md`'de.
+- **`video-toolkit/vendor/uisfx`:** 1872 arayüz sesi, CC0.
 - **Sentez:** `music.py` içinde whoosh, riser, boom, su, rüzgâr ve ping hazır.
 - **Freesound:** API anahtarı gerekir; ses başına CC0, CC BY veya CC BY-NC.
 - **Pixabay ses efektleri.**
@@ -37,6 +39,8 @@ Her varlığın kaynağını, yazarını ve lisansını künyeye (`ACIKLAMA.md`)
 | F5-TTS Türkçe ince ayarları | Lisans modele göre değişir (MIT olan var, CC-BY-NC olan var); kontrol et. |
 | XTTS-v2 | CPML lisansı, ticari kullanım yok. |
 | ElevenLabs (`elevenlabs`, `elevenlabs-automation`) | En doğal ses. Ücretsiz kotası sınırlı, API anahtarı gerekir. |
+| Azure AI Speech, ücretsiz F0 katmanı | Resmî servis. `tr-TR-AhmetNeural` ve `tr-TR-EmelNeural` sesleri; ayda belirli bir karakter kotası ücretsiz. Azure hesabı ve anahtar gerekir. |
+| Edge TTS (`edge-tts`, venv'de kurulu) | Azure ile aynı Türkçe sesler, anahtarsız. Ancak Microsoft'un resmî olmayan servisini kullanır; ticari işte Azure'u tercih et. `speech.platform.bing.com` ağ izni gerekir. |
 
 ## OmniRoute (isteğe bağlı ağ geçidi)
 [OmniRoute](https://github.com/cheaper-inference/OmniRoute), kullanıcının kendi sunucusunda çalışan bir yapay zekâ ağ geçidi.

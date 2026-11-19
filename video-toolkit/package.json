@@ -1,0 +1,22 @@
+{
+  "name": "video-toolkit",
+  "private": true,
+  "description": "Shorts ve tanıtım videoları için grafik, efekt, karakter ve font paketleri (kurulum: ./install.sh)",
+  "dependencies": {
+    "@dicebear/core": "9.4.2",
+    "@dicebear/collection": "9.4.2",
+    "canvas-confetti": "1.9.4",
+    "@tsparticles/engine": "4.6.0",
+    "@tsparticles/slim": "4.6.0",
+    "gsap": "3.15.1",
+    "animejs": "4.5.0",
+    "lottie-web": "5.13.0",
+    "gl-transitions": "3.3.0",
+    "@fontsource/anton": "5.3.0",
+    "@fontsource/poppins": "5.3.0",
+    "@fontsource/baloo-2": "5.3.0",
+    "@fontsource/noto-color-emoji": "5.3.2",
+    "@fontsource/bebas-neue": "5.3.0",
+    "@fontsource/montserrat": "5.3.0"
+  }
+}

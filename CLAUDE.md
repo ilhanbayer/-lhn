@@ -14,6 +14,10 @@ Kullanıcı, `.claude/skills/` altındaki skill'lerin **tüm video ve diğer iş
   - Blender: 3B sahneler
   - FFmpeg ve MoviePy: kurgu
   - ElevenLabs, ACE-Step, LTX-2: yapay zekâ ile ses, müzik ve video; anahtar veya GPU gerekir
+- **Shorts, Reels ve TikTok:** `shorts-cartoon-style` skill'ini izle. Araçlar `video-toolkit/` altında; önce `video-toolkit/install.sh` çalıştır. Hazır içerik:
+  - `sfx/`: 320 CC0 ses efekti
+  - `emoji/`: Noto emoji SVG'leri
+  - DiceBear karakterler, Rhubarb dudak senkronu, konfeti/parçacık, GSAP, gl-transitions, fontlar
 - Hazır video hattı `yahyali/video/` klasöründe:
   - `render/`: parallax illüstrasyon ve tipografi render motoru
   - `scripts/music.py`: müzik, efekt ve miksaj sentezi

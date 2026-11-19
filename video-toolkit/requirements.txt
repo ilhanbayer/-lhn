@@ -1,0 +1,9 @@
+# Video araç takımı Python paketleri (kurulum: ./install.sh)
+moviepy==2.2.1        # kurgu, yazı/altyazı bindirme (MIT)
+edge-tts==7.3.1       # Microsoft Edge sesleri (tr-TR Ahmet/Emel); resmi olmayan servis, ağ izni ister
+piper-tts==1.8.0      # çevrimdışı Türkçe TTS
+sherpa-onnx           # çevrimdışı Whisper (konuşmayı yazıya çevirme / zamanlama)
+yt-dlp==2026.10.26    # referans video bilgisi ve kareleri
+soundfile
+scipy
+numpy
