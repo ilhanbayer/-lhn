@@ -7,6 +7,13 @@ Kullanıcı, `.claude/skills/` altındaki skill'lerin **tüm video ve diğer iş
 - `video-downloader` ile indirilen videoları yalnızca referans ve inceleme için kullan. Telifli içeriği izinsiz olarak videolara koyma.
 
 ## Video işleri
+- **Her video, animasyon, film veya tanıtım işinde önce `tr-video-production` skill'ini oku.** Hangi işte hangi aracın kullanılacağını ve teslim standardını o belirler. Medya ve ses kaynakları için `free-media-sources` skill'ine bak.
+- Profesyonel araçlar:
+  - HyperFrames: After Effects tarzı motion graphics ve yaklaşık 450 hazır blok
+  - Manim: teknik ve matematik anlatımı
+  - Blender: 3B sahneler
+  - FFmpeg ve MoviePy: kurgu
+  - ElevenLabs, ACE-Step, LTX-2: yapay zekâ ile ses, müzik ve video; anahtar veya GPU gerekir
 - Hazır video hattı `yahyali/video/` klasöründe:
   - `render/`: parallax illüstrasyon ve tipografi render motoru
   - `scripts/music.py`: müzik, efekt ve miksaj sentezi
