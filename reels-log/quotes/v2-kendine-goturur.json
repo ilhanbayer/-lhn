@@ -1,0 +1,28 @@
+{
+ "lines": [
+  {
+   "text": "Bazı yollar seni",
+   "t": -0.8,
+   "keep": true,
+   "fs": 92,
+   "step": 0.14
+  },
+  {
+   "text": "bir yere değil,",
+   "t": 2.6,
+   "italic": true,
+   "fs": 82,
+   "step": 0.13
+  },
+  {
+   "text": "*kendine götürür.",
+   "t": 9.0,
+   "italic": true,
+   "fs": 82,
+   "step": 0.16,
+   "mt": -12
+  }
+ ],
+ "top": 350,
+ "out": 14.15
+}

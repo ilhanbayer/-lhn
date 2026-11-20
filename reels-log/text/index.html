@@ -28,7 +28,7 @@ const C = JSON.parse(q.get('cfg') || '{"lines":[{"text":"Örnek *söz","t":0.4}]
 const wrap = document.getElementById('wrap'); if (C.top) document.documentElement.style.setProperty('--top', C.top + 'px'); if (C.fs) document.documentElement.style.setProperty('--fs', C.fs + 'px');
 const words = [];
 for (const L of C.lines) {
-  const p = document.createElement('p'); p.className = 'l' + (L.italic ? ' i' : '') + (L.kicker ? ' k' : '');
+  const p = document.createElement('p'); p.className = 'l' + (L.italic ? ' i' : '') + (L.kicker ? ' k' : ''); if (L.fs) p.style.fontSize = L.fs + 'px'; if (L.mt !== undefined) p.style.marginTop = L.mt + 'px';
   L.text.split(' ').forEach((w, k) => { const s = document.createElement('span'); s.className = 'w' + (w.startsWith('*') ? ' hl' : ''); s.textContent = w.replace(/^\*/, '');
     p.appendChild(s); p.appendChild(document.createTextNode(' ')); words.push({ el: s, t: L.t + k * (L.step || 0.11), keep: !!L.keep }); });
   wrap.appendChild(p);

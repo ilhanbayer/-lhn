@@ -1,0 +1,28 @@
+{
+ "lines": [
+  {
+   "text": "Acele etme.",
+   "t": -0.8,
+   "keep": true,
+   "fs": 100,
+   "step": 0.14
+  },
+  {
+   "text": "Nehir de denize",
+   "t": 2.6,
+   "italic": true,
+   "fs": 82,
+   "step": 0.13
+  },
+  {
+   "text": "*kıvrıla *kıvrıla varır.",
+   "t": 9.0,
+   "italic": true,
+   "fs": 82,
+   "step": 0.16,
+   "mt": -12
+  }
+ ],
+ "top": 350,
+ "out": 14.15
+}
