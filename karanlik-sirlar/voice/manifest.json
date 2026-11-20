@@ -16,12 +16,13 @@
   "file": "voice/a02.flac"
  },
  "a03": {
-  "sim": 0.857,
+  "sim": 1.0,
   "dur": 1.16,
-  "asr": "Aman Kece'si",
-  "seed": 11,
+  "asr": "Ama gecesi.",
+  "seed": 13,
   "ok": true,
-  "file": "voice/a03.flac"
+  "file": "voice/a03.flac",
+  "note": "yeniden üretildi: \"Ama, gecesi...\" (virgülle kısa duraklama)"
  },
  "a04": {
   "sim": 1.0,

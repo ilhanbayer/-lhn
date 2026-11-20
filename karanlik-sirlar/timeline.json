@@ -1,0 +1,348 @@
+{
+ "duration": 146.8,
+ "lines": [
+  {
+   "id": "a01",
+   "text": "Bir memleket düşünün...",
+   "start": 2.0,
+   "end": 3.347,
+   "post": "normal"
+  },
+  {
+   "id": "a02",
+   "text": "Gündüzü cennet...",
+   "start": 5.347,
+   "end": 6.357,
+   "post": "warm"
+  },
+  {
+   "id": "a03",
+   "text": "Ama gecesi...",
+   "start": 7.257,
+   "end": 8.556,
+   "post": "dark"
+  },
+  {
+   "id": "a04",
+   "text": "Bambaşka bir âlem!",
+   "start": 9.456,
+   "end": 10.487,
+   "post": "lowbreath"
+  },
+  {
+   "id": "a05",
+   "text": "Burası Yahyalı...",
+   "start": 13.887,
+   "end": 14.913,
+   "post": "normal"
+  },
+  {
+   "id": "a06",
+   "text": "Burada her kayanın bir hikâyesi...",
+   "start": 16.313,
+   "end": 18.708,
+   "post": "normal"
+  },
+  {
+   "id": "a07",
+   "text": "Her ağacın bir sırrı...",
+   "start": 19.408,
+   "end": 20.87,
+   "post": "normal"
+  },
+  {
+   "id": "a08",
+   "text": "Ve bazı gecelerin, anlatılmaya cesaret edilemeyen hatıraları var.",
+   "start": 21.77,
+   "end": 25.796,
+   "post": "dark"
+  },
+  {
+   "id": "a09",
+   "text": "Kimi gördüğünü anlatamamış...",
+   "start": 26.896,
+   "end": 28.94,
+   "post": "normal"
+  },
+  {
+   "id": "a10",
+   "text": "Kimi yaşadıklarına kimseyi inandıramamış...",
+   "start": 29.54,
+   "end": 32.148,
+   "post": "normal"
+  },
+  {
+   "id": "a11",
+   "text": "Ama bazı hikâyeler var ki...",
+   "start": 33.148,
+   "end": 34.954,
+   "post": "normal"
+  },
+  {
+   "id": "a12",
+   "text": "Aradan yıllar geçse de unutulmamış!",
+   "start": 35.554,
+   "end": 38.199,
+   "post": "strong"
+  },
+  {
+   "id": "b01",
+   "text": "Yahyalı'nın yaylalarında...",
+   "start": 41.799,
+   "end": 43.428,
+   "post": "normal"
+  },
+  {
+   "id": "b02",
+   "text": "Beş büyük ardıcın gölgesinde...",
+   "start": 44.028,
+   "end": 46.412,
+   "post": "normal"
+  },
+  {
+   "id": "b03",
+   "text": "Kanlı Ardıç!",
+   "start": 47.312,
+   "end": 48.32,
+   "post": "strong"
+  },
+  {
+   "id": "b04",
+   "text": "Burası sıradan bir ağaçlık değil...",
+   "start": 49.92,
+   "end": 51.581,
+   "post": "normal"
+  },
+  {
+   "id": "b05",
+   "text": "Bir makam...",
+   "start": 52.181,
+   "end": 53.076,
+   "post": "normal"
+  },
+  {
+   "id": "b06",
+   "text": "Burada yatanın Süme olduğu söylenir.",
+   "start": 53.976,
+   "end": 56.011,
+   "post": "normal"
+  },
+  {
+   "id": "b07",
+   "text": "Ama burayı asıl gizemli yapan şey...",
+   "start": 57.011,
+   "end": 59.057,
+   "post": "normal"
+  },
+  {
+   "id": "b08",
+   "text": "Hakkında anlatılanlar!",
+   "start": 59.657,
+   "end": 60.952,
+   "post": "strong"
+  },
+  {
+   "id": "b09",
+   "text": "Rivayete göre...",
+   "start": 62.452,
+   "end": 64.051,
+   "post": "low"
+  },
+  {
+   "id": "b10",
+   "text": "Bir gün bir adam bu ağaçlardan odun keser.",
+   "start": 64.751,
+   "end": 67.115,
+   "post": "low"
+  },
+  {
+   "id": "b11",
+   "text": "Topladığı odunları çadırına taşır.",
+   "start": 67.915,
+   "end": 69.707,
+   "post": "low"
+  },
+  {
+   "id": "b12",
+   "text": "Gece olur...",
+   "start": 70.807,
+   "end": 71.621,
+   "post": "dark"
+  },
+  {
+   "id": "b13",
+   "text": "Dağ sessizliğe bürünür...",
+   "start": 72.421,
+   "end": 74.044,
+   "post": "dark"
+  },
+  {
+   "id": "b14",
+   "text": "Sabah uyandığında ise...",
+   "start": 75.044,
+   "end": 76.669,
+   "post": "normal"
+  },
+  {
+   "id": "b15",
+   "text": "Odunlar yoktur!",
+   "start": 78.669,
+   "end": 79.827,
+   "post": "strong"
+  },
+  {
+   "id": "b16",
+   "text": "Önce şaşırır...",
+   "start": 81.327,
+   "end": 82.513,
+   "post": "normal"
+  },
+  {
+   "id": "b17",
+   "text": "Sonra aynı ağaçlardan yeniden odun keser.",
+   "start": 83.113,
+   "end": 86.15,
+   "post": "normal"
+  },
+  {
+   "id": "b18",
+   "text": "Çadırına taşır.",
+   "start": 86.65,
+   "end": 88.11,
+   "post": "normal"
+  },
+  {
+   "id": "b19",
+   "text": "Ama ertesi sabah...",
+   "start": 89.01,
+   "end": 90.338,
+   "post": "normal"
+  },
+  {
+   "id": "b20",
+   "text": "Yine aynı manzara!",
+   "start": 90.938,
+   "end": 91.927,
+   "post": "strong"
+  },
+  {
+   "id": "b21",
+   "text": "Odunlar ortadan kaybolmuştur!",
+   "start": 92.527,
+   "end": 94.366,
+   "post": "strong"
+  },
+  {
+   "id": "b22",
+   "text": "Üçüncü kez dener...",
+   "start": 95.466,
+   "end": 96.568,
+   "post": "normal"
+  },
+  {
+   "id": "b23",
+   "text": "Ve yine...",
+   "start": 97.168,
+   "end": 98.205,
+   "post": "dark"
+  },
+  {
+   "id": "b24",
+   "text": "Hiçbir şey kalmamıştır!",
+   "start": 99.005,
+   "end": 100.334,
+   "post": "strong"
+  },
+  {
+   "id": "b25",
+   "text": "İşte o zaman korkuya kapılır...",
+   "start": 101.834,
+   "end": 103.454,
+   "post": "nearwhisper"
+  },
+  {
+   "id": "b26",
+   "text": "Bir daha o ağaçlardan tek bir dal bile almaya cesaret edemez.",
+   "start": 104.054,
+   "end": 108.555,
+   "post": "low"
+  },
+  {
+   "id": "b27",
+   "text": "Şimdi bir düşünün...",
+   "start": 111.755,
+   "end": 112.85,
+   "post": "low"
+  },
+  {
+   "id": "b28",
+   "text": "Gece yarısı...",
+   "start": 113.75,
+   "end": 114.814,
+   "post": "low"
+  },
+  {
+   "id": "b29",
+   "text": "Torosların ortasında...",
+   "start": 115.514,
+   "end": 116.916,
+   "post": "low"
+  },
+  {
+   "id": "b30",
+   "text": "Etrafınızda kimseden eser yok...",
+   "start": 117.616,
+   "end": 119.936,
+   "post": "low"
+  },
+  {
+   "id": "b31",
+   "text": "Ve sabaha karşı...",
+   "start": 120.936,
+   "end": 122.06,
+   "post": "low"
+  },
+  {
+   "id": "b32",
+   "text": "Bir gece önce kendi ellerinizle topladığınız odunlar...",
+   "start": 122.66,
+   "end": 125.488,
+   "post": "normal"
+  },
+  {
+   "id": "b33",
+   "text": "Yok!",
+   "start": 126.488,
+   "end": 127.025,
+   "post": "strong"
+  },
+  {
+   "id": "b34",
+   "text": "Peki...",
+   "start": 129.025,
+   "end": 129.701,
+   "post": "whisper"
+  },
+  {
+   "id": "b35",
+   "text": "Sizce o odunları kim aldı?",
+   "start": 130.401,
+   "end": 131.982,
+   "post": "whisper"
+  },
+  {
+   "id": "b36",
+   "text": "Belki de Kanlı Ardıç'ın sırrı...",
+   "start": 134.182,
+   "end": 136.695,
+   "post": "dark"
+  },
+  {
+   "id": "b37",
+   "text": "Hâlâ çözülmeyi bekliyordur!",
+   "start": 137.295,
+   "end": 139.804,
+   "post": "dark"
+  }
+ ]
+}

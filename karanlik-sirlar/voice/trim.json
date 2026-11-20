@@ -1,0 +1,302 @@
+{
+ "a01": {
+  "orig": 1.72,
+  "cut": 1.49,
+  "heard": "Bir memleket düşünün.",
+  "full_sim": 1.0
+ },
+ "a02": {
+  "orig": 1.36,
+  "cut": 1.36,
+  "heard": "Gündüzü Cennet",
+  "full_sim": 1.0
+ },
+ "a03": {
+  "orig": 2.64,
+  "cut": 1.47,
+  "heard": "Ama gecesi.",
+  "full_sim": 1.0
+ },
+ "a04": {
+  "orig": 1.44,
+  "cut": 1.18,
+  "heard": "Bambaşka bir alem",
+  "full_sim": 1.0
+ },
+ "a05": {
+  "orig": 2.6,
+  "cut": 1.15,
+  "heard": "Burası Yahyalı.",
+  "full_sim": 1.0
+ },
+ "a06": {
+  "orig": 3.04,
+  "cut": 2.52,
+  "heard": "Burada her kayanın bir hikayesi.",
+  "full_sim": 1.0
+ },
+ "a07": {
+  "orig": 2.64,
+  "cut": 1.61,
+  "heard": "Her ağacım bir sırrı.",
+  "full_sim": 0.95
+ },
+ "a08": {
+  "orig": 4.4,
+  "cut": 4.32,
+  "heard": "ve bazı gecelerin anlatılmaya cesaret edilemeyen hatıraları var.",
+  "full_sim": 1.0
+ },
+ "a09": {
+  "orig": 2.2,
+  "cut": 2.2,
+  "heard": "Kimi gördüğünü anlatamamış.",
+  "full_sim": 1.0
+ },
+ "a10": {
+  "orig": 3.72,
+  "cut": 2.74,
+  "heard": "Kimi yaşadıklarına kimseyi inandıramamış",
+  "full_sim": 1.0
+ },
+ "a11": {
+  "orig": 2.6,
+  "cut": 1.95,
+  "heard": "Ama bazı hikayeler var ki...",
+  "full_sim": 1.0
+ },
+ "a12": {
+  "orig": 3.6,
+  "cut": 2.77,
+  "heard": "Aradan yıllar geçse de unutulmamış.",
+  "full_sim": 1.0
+ },
+ "b01": {
+  "orig": 2.28,
+  "cut": 1.87,
+  "heard": "Yahyalının yâilalarında",
+  "full_sim": 0.96
+ },
+ "b02": {
+  "orig": 3.24,
+  "cut": 2.45,
+  "heard": "Beşbüyük Ardıcın Gölgesinde.",
+  "full_sim": 0.98,
+  "manual": true
+ },
+ "b03": {
+  "orig": 2.24,
+  "cut": 1.25,
+  "heard": "Kanlı Ardıç.",
+  "full_sim": 1.0,
+  "manual": true
+ },
+ "b04": {
+  "orig": 3.36,
+  "cut": 1.79,
+  "heard": "Burası sıradan bir ağaçlık değil",
+  "full_sim": 1.0
+ },
+ "b05": {
+  "orig": 2.32,
+  "cut": 0.98,
+  "heard": "Bir makam.",
+  "full_sim": 1.0
+ },
+ "b06": {
+  "orig": 3.64,
+  "cut": 2.16,
+  "heard": "Burada yatanın şimdi olduğu söylenir.",
+  "full_sim": 0.9
+ },
+ "b07": {
+  "orig": 3.32,
+  "cut": 2.21,
+  "heard": "Ama burayı asıl gizemli yapan şey...",
+  "full_sim": 1.0
+ },
+ "b08": {
+  "orig": 3.68,
+  "cut": 1.43,
+  "heard": "hakkında anlatılanlar.",
+  "full_sim": 1.0
+ },
+ "b09": {
+  "orig": 2.28,
+  "cut": 1.7,
+  "heard": "",
+  "full_sim": 0.89,
+  "manual": true
+ },
+ "b10": {
+  "orig": 3.28,
+  "cut": 2.5,
+  "heard": "Bir gün bir adam bu ağaçlardan uduğun keser",
+  "full_sim": 0.95
+ },
+ "b11": {
+  "orig": 5.68,
+  "cut": 2.0,
+  "heard": "Topladığı odunları çadırına taşır.",
+  "full_sim": 1.0,
+  "manual": true
+ },
+ "b12": {
+  "orig": 1.12,
+  "cut": 1.12,
+  "heard": "Gece Olur.",
+  "full_sim": 1.0
+ },
+ "b13": {
+  "orig": 2.8,
+  "cut": 1.97,
+  "heard": "Daha sessizliğe bürünür",
+  "full_sim": 0.93
+ },
+ "b14": {
+  "orig": 2.28,
+  "cut": 1.7,
+  "heard": "",
+  "full_sim": 1.0,
+  "manual": true
+ },
+ "b15": {
+  "orig": 1.52,
+  "cut": 1.28,
+  "heard": "Odunlar yoktur.",
+  "full_sim": 1.0
+ },
+ "b16": {
+  "orig": 1.84,
+  "cut": 1.31,
+  "heard": "Önce şaşırır",
+  "full_sim": 1.0
+ },
+ "b17": {
+  "orig": 3.4,
+  "cut": 3.17,
+  "heard": "Sonra aynı ağaçlardan yeniden odun keser.",
+  "full_sim": 1.0
+ },
+ "b18": {
+  "orig": 4.4,
+  "cut": 1.59,
+  "heard": "Çadırına taşır.",
+  "full_sim": 1.0
+ },
+ "b19": {
+  "orig": 2.48,
+  "cut": 1.46,
+  "heard": "Ama ertiği sabah.",
+  "full_sim": 0.88
+ },
+ "b20": {
+  "orig": 3.84,
+  "cut": 1.15,
+  "heard": "Yine aynı manzara",
+  "full_sim": 1.0
+ },
+ "b21": {
+  "orig": 3.44,
+  "cut": 2.1,
+  "heard": "O dünler ortadan kaybolmuştur.",
+  "full_sim": 0.91,
+  "manual": true
+ },
+ "b22": {
+  "orig": 2.4,
+  "cut": 1.25,
+  "heard": "3. kez dener",
+  "full_sim": 1.0
+ },
+ "b23": {
+  "orig": 1.48,
+  "cut": 1.18,
+  "heard": "Ve yine...",
+  "full_sim": 1.0
+ },
+ "b24": {
+  "orig": 2.96,
+  "cut": 1.46,
+  "heard": "Hiçbir şey kalmamıştır.",
+  "full_sim": 1.0
+ },
+ "b25": {
+  "orig": 2.76,
+  "cut": 1.78,
+  "heard": "İşte o zaman korku yakabılır.",
+  "full_sim": 0.93
+ },
+ "b26": {
+  "orig": 4.56,
+  "cut": 4.56,
+  "heard": "Bir daha o ağaçlardan tek bir dal bir almaya cesaret edemez.",
+  "full_sim": 0.97
+ },
+ "b27": {
+  "orig": 2.44,
+  "cut": 1.24,
+  "heard": "Şimdi bir düşünün.",
+  "full_sim": 1.0
+ },
+ "b28": {
+  "orig": 2.48,
+  "cut": 1.18,
+  "heard": "Gece yarısı.",
+  "full_sim": 1.0
+ },
+ "b29": {
+  "orig": 2.12,
+  "cut": 1.53,
+  "heard": "Torosların ortasında.",
+  "full_sim": 1.0
+ },
+ "b30": {
+  "orig": 4.16,
+  "cut": 2.53,
+  "heard": "Etrafınızda kimseden iser yok.",
+  "full_sim": 0.97
+ },
+ "b31": {
+  "orig": 3.36,
+  "cut": 1.24,
+  "heard": "Ve sabah karşıya.",
+  "full_sim": 0.9
+ },
+ "b32": {
+  "orig": 4.2,
+  "cut": 2.96,
+  "heard": "Bir gece önce kendilerinizle topladığınız odunlar.",
+  "full_sim": 0.97
+ },
+ "b33": {
+  "orig": 0.6,
+  "cut": 0.6,
+  "heard": "Yok!",
+  "full_sim": 1.0
+ },
+ "b34": {
+  "orig": 0.84,
+  "cut": 0.8,
+  "heard": "Peki.",
+  "full_sim": 1.0
+ },
+ "b35": {
+  "orig": 2.72,
+  "cut": 1.72,
+  "heard": "Sizce o odunları kim aldı?",
+  "full_sim": 1.0
+ },
+ "b36": {
+  "orig": 2.84,
+  "cut": 2.64,
+  "heard": "Belki de kanlı ardıçın sırrı.",
+  "full_sim": 1.0
+ },
+ "b37": {
+  "orig": 3.0,
+  "cut": 2.65,
+  "heard": "Hala çözümü iyi bekliyordur.",
+  "full_sim": 0.91
+ }
+}
