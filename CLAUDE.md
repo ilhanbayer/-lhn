@@ -18,6 +18,7 @@ Kullanıcı, `.claude/skills/` altındaki skill'lerin **tüm video ve diğer iş
 - YouTube paketi (`/yt-script`, `/yt-package`, `/yt-seo`, `/yt-chapters`, `/yt-shorts`...): Türkçe puanlama destekli.
   - Kullanmadan önce kanalın ses profilini yerine koy: `mkdir -p ~/.claude/youtube && cp .claude/youtube/voice.md ~/.claude/youtube/`
   - Yeni videolardan öğrendiklerini `.claude/youtube/voice.md` dosyasına işle.
+  - "Kanlı Ardıç" videosuna (`karanlik-sirlar/`) bu paketi uygulama; o video teslim edildiği hâliyle kalıyor (kullanıcı isteği).
 
 ## Video işleri
 - **Her video, animasyon, film veya tanıtım işinde önce `tr-video-production` skill'ini oku.** Hangi işte hangi aracın kullanılacağını ve teslim standardını o belirler. Medya ve ses kaynakları için `free-media-sources` skill'ine bak.

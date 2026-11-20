@@ -1,14 +1,5 @@
 # Yahyalı'nın Karanlık Sırları: Kanlı Ardıç
 
-## Başlık ve kapak (yt-package denetimi)
-
-| Başlık | Kapak yazısı | Puan |
-|---|---|---|
-| **Kanlı Ardıç: 3 Sabah Kaybolan Odunlar \| Yahyalı Rivayeti** (önerilen) | KİM ALDI? (`yahyalinin-karanlik-sirlari-kapak-2.jpg`) | 98/100 |
-| Yahyalı'nın Karanlık Sırları: Kanlı Ardıç | KANLI ARDIÇ (`yahyalinin-karanlik-sirlari-kapak.jpg`) | 62/100 |
-
-İkinci eşleşmede kapak, başlıktaki kelimeleri tekrarlıyor ve başlıkta sayı yok. "Yahyalı'nın Karanlık Sırları" dizi adı olarak videonun içinde kalıyor. İki kapağı YouTube Studio'da "Test ve karşılaştır" ile denemek de mümkün.
-
 ## YouTube açıklaması (kopyalayıp yapıştırın)
 
 Gündüzü cennet... Ama gecesi bambaşka bir âlem.
