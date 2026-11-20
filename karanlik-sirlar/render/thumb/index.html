@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Kanlı Ardıç kapak</title>
+<link rel="stylesheet" href="../node_modules/@fontsource/cinzel/700.css">
+<link rel="stylesheet" href="../node_modules/@fontsource/cinzel/900.css">
+<link rel="stylesheet" href="../node_modules/@fontsource/cormorant-garamond/500-italic.css">
+<style>
+html,body{margin:0;width:1280px;height:720px;overflow:hidden;background:#000}
+#bg{position:absolute;inset:0;background-size:cover;background-position:var(--pos,50% 40%);filter:contrast(1.12) saturate(1.05) brightness(1.08)}
+#shade{position:absolute;inset:0;background:radial-gradient(ellipse at 62% 35%,rgba(0,0,0,0) 0,rgba(0,0,0,.25) 45%,rgba(0,0,0,.85) 100%),linear-gradient(0deg,rgba(0,0,0,.85) 0,rgba(0,0,0,0) 46%)}
+#red{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(120,10,8,.45) 0,rgba(120,10,8,0) 60%)}
+.t{position:absolute;left:56px;font-family:'Cinzel',serif;color:#f1e9d8;text-shadow:0 4px 24px rgba(0,0,0,.95),0 0 3px #000}
+#k{bottom:150px;font-weight:900;font-size:122px;letter-spacing:.04em;line-height:1}
+#k span{color:#c8241c}
+#s{bottom:96px;font-weight:700;font-size:40px;letter-spacing:.14em;color:#d9cfbc}
+#n{bottom:44px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:32px;color:#bfb6a3;letter-spacing:.03em}
+</style>
+</head>
+<body>
+<div id="bg"></div><div id="red"></div><div id="shade"></div>
+<div class="t" id="k"><span>KANLI</span> ARDIÇ</div>
+<div class="t" id="s">YAHYALI'NIN KARANLIK SIRLARI</div>
+<div class="t" id="n">Toroslarda anlatılan bir halk rivayeti</div>
+<script>
+const q = new URLSearchParams(location.search);
+document.getElementById('bg').style.backgroundImage = `url(${q.get('img')})`;
+if (q.get('pos')) document.documentElement.style.setProperty('--pos', q.get('pos'));
+document.fonts.ready.then(() => { window.READY = true; });
+</script>
+</body>
+</html>

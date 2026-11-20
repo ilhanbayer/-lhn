@@ -76,8 +76,8 @@ def wind_layer(level, gust_rate=0.12, whistle=True):
             seg = reson(src[i0:i1], f, 9) * 0.5
             w[i0:i1] += seg * np.hanning(i1 - i0)[:, None]
         out += w * 0.55 * (level * gust ** 1.5)[:, None]
-    hiss = bp(noise(N), 2500, 9000) * 0.22
-    out += hiss * (level * gust ** 2)[:, None]
+    hiss = bp(noise(N), 2500, 8000) * 0.12
+    out += hiss * (level * gust ** 3)[:, None]
     return out
 
 def fire_layer(level):
