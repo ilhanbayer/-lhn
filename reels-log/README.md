@@ -13,4 +13,4 @@ Kaynak: DJI Air 3S, dikey 1512×2688, 59,94 fps, HLG (BT.2020), 24,6 sn (`in/sou
 5. `./scripts/build_reel.sh`: müziği −14 LUFS'e getirir, görüntüyü birleştirir ve kodlar → `out/reel.mp4`.
    - 1080×1920, 30 fps, H.264.
 
-Gökyüzü ve alt kenar karartma plakası `work/plate.png` dosyasıdır; üretim kodu sohbet geçmişinde, gerekirse `grade.py` yanına taşınabilir.
+Gökyüzü ve alt kenar karartma plakası: `python3 scripts/plate.py` → `work/plate.png`.
