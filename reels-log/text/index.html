@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Reels söz katmanı</title>
+<link rel="stylesheet" href="/karanlik-sirlar/render/node_modules/@fontsource/cormorant-garamond/500.css">
+<link rel="stylesheet" href="/karanlik-sirlar/render/node_modules/@fontsource/cormorant-garamond/500-italic.css">
+<link rel="stylesheet" href="/karanlik-sirlar/render/node_modules/@fontsource/montserrat/300.css">
+<style>
+html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden}
+#wrap{position:absolute;left:90px;right:150px;top:var(--top,660px);text-align:center;color:#fbf6ec}
+.l{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:var(--fs,86px);line-height:1.12;letter-spacing:.005em;margin:0 0 26px;
+   text-shadow:0 2px 18px rgba(0,0,0,.55),0 0 2px rgba(0,0,0,.6)}
+.l.i{font-style:italic}
+.w{display:inline-block;opacity:0;will-change:opacity,transform,filter}
+.hl{color:#f2c879}
+#sig{margin-top:34px;font-family:'Montserrat',sans-serif;font-weight:300;font-size:30px;letter-spacing:.42em;color:#efe6d6;opacity:0;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+</style>
+</head>
+<body>
+<div id="wrap"></div>
+<script>
+// config: lines [{text, t, italic}], "*" before a word highlights it; sig = small line under the quote
+const q = new URLSearchParams(location.search);
+const C = JSON.parse(q.get('cfg') || '{"lines":[{"text":"Örnek *söz","t":0.4}],"sig":"","sigT":3,"out":0}');
+const wrap = document.getElementById('wrap'); if (C.top) document.documentElement.style.setProperty('--top', C.top + 'px'); if (C.fs) document.documentElement.style.setProperty('--fs', C.fs + 'px');
+const words = [];
+for (const L of C.lines) {
+  const p = document.createElement('p'); p.className = 'l' + (L.italic ? ' i' : '');
+  L.text.split(' ').forEach((w, k) => { const s = document.createElement('span'); s.className = 'w' + (w.startsWith('*') ? ' hl' : ''); s.textContent = w.replace(/^\*/, '');
+    p.appendChild(s); p.appendChild(document.createTextNode(' ')); words.push({ el: s, t: L.t + k * (L.step || 0.11) }); });
+  wrap.appendChild(p);
+}
+const sig = document.getElementById('sig') || Object.assign(document.createElement('div'), { id: 'sig' }); sig.textContent = C.sig || ''; wrap.appendChild(sig);
+const ease = u => 1 - Math.pow(1 - Math.min(1, Math.max(0, u)), 3);
+window.frame = (t) => {
+  const out = C.out ? Math.min(1, Math.max(0, (t - C.out) / 0.6)) : 0;              // fade everything out for the loop point
+  for (const w of words) { const u = ease((t - w.t) / 0.55); w.el.style.opacity = (u * (1 - out)).toFixed(3);
+    w.el.style.transform = `translateY(${(1 - u) * 18}px)`; w.el.style.filter = `blur(${((1 - u) * 6).toFixed(2)}px)`; }
+  const us = ease((t - (C.sigT || 99)) / 0.8); sig.style.opacity = (us * 0.85 * (1 - out)).toFixed(3);
+};
+document.fonts.ready.then(() => { window.frame(0); window.READY = true; });
+</script>
+</body>
+</html>
