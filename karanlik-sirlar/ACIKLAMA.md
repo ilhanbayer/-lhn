@@ -37,6 +37,7 @@ Siz bu rivayeti duydunuz mu? Bildiğiniz başka bir anlatı varsa yorumlara yaz�
 - Görüntü: 1920×1080, 30 fps, 2.39:1 sinema bantlı, yaklaşık 2 dk 27 sn.
 - Ses: YouTube için −14 LUFS, en yüksek tepe −1,9 dBTP.
 - Altyazı: Türkçe, `yahyalinin-karanlik-sirlari.srt` (videoda ayrıca kapatılabilir altyazı izi olarak da var).
+- Kapak görseli (thumbnail): `yahyalinin-karanlik-sirlari-kapak.jpg`, 1280×720.
 
 ## Yayın notu
 

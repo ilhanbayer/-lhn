@@ -250,7 +250,7 @@ for (t0, db, pan) in ((29.25, -27, 0.5), (102.55, -21, -0.6), (118.35, -19, -0.7
 fx[int(49.9 * SR):int(49.9 * SR) + int(7.0 * SR)] += at_rms(flutter(49.9, 56.9, 1.0), -44)
 put(fx, at_rms(breath_swell(1.7, 1.0), -36), 97.25)
 # ---- the woodcutter: axe chops, footsteps
-for tc in (65.2375, 66.4875, 83.3875, 84.6375, 85.4375, 95.9535):
+for tc in (65.267, 66.517, 83.417, 84.667, 85.467, 95.983):                         # the frame the axe meets the wood
     a = st(at_peak(axe_chop(1.0), -15), 0.15); put(fx, conv(a, VALLEY) * 0.3 + a, tc)
 STRIDE = 1.45
 def steps_for(t0, t1, pts, u0, u1, ph0=0.0, level=0.07, carry=False):
@@ -317,20 +317,21 @@ put(mus, ney([(62, 0.5), (63, 0.5), (66, 0.8), (67, 0.6), (69, 1.0), (70, 0.6), 
 put(mus, choir([38, 45, 50, 57], 7.5, 0.05, a=2.0, r=3.5), 139.6)
 
 # ---- hits (CC0 sfx kit + synthesized sub drops), each after a short silence
+def cut(t): return float(np.ceil(t * 30 - 1e-6) / 30)                              # first video frame of a hard cut
 HITS = [  # time, [(sample, gain dB)], sub drop amp
-    (9.456, [('cinematic-drum-massive', -6), ('bass-sub-drop-long', -6)], 0.35),
+    (cut(9.456), [('cinematic-drum-massive', -6), ('bass-sub-drop-long', -6)], 0.35),
     (11.15, [('boom-hit-soft', -14)], 0.0),
     (39.1, [('cinematic-drum-big', -8), ('boom-hit-strong', -10)], 0.3),
-    (47.312, [('cinematic-drum-massive', -4), ('cinematic-thunder-big', -14), ('bass-sub-drop-long', -6)], 0.45),
+    (cut(47.312), [('cinematic-drum-massive', -4), ('cinematic-thunder-big', -14), ('bass-sub-drop-long', -6)], 0.45),
     (59.66, [('boom-hit-strong', -9)], 0.25),
-    (78.669, [('impact-deep-hard', -6), ('boom-hit-strong', -8)], 0.35),
-    (90.938, [('cinematic-drum-big', -8), ('impact-deep-hard', -10)], 0.3),
-    (99.005, [('cinematic-drum-massive', -6), ('bass-sub-drop-long', -8)], 0.4),
-    (126.47, [('cinematic-drum-massive', -4), ('impact-deep-hard', -8), ('bass-sub-drop-long', -6)], 0.45),
+    (cut(78.669), [('impact-deep-hard', -6), ('boom-hit-strong', -8)], 0.35),
+    (cut(90.938), [('cinematic-drum-big', -8), ('impact-deep-hard', -10)], 0.3),
+    (cut(99.005), [('cinematic-drum-massive', -6), ('bass-sub-drop-long', -8)], 0.4),
+    (cut(126.47), [('cinematic-drum-massive', -4), ('impact-deep-hard', -8), ('bass-sub-drop-long', -6)], 0.45),
     (139.95, [('boom-drop-strong', -9)], 0.25),
 ]
 for t0, samples, sub in HITS:
-    for name, g in samples: put(fx, load(name, g), t0 - 0.01)
+    for name, g in samples: put(fx, load(name, g), t0 - 0.005)
     if sub: put(fx, st(subdrop(amp=sub * 0.5)), t0)
 for t0 in (9.456, 47.312):                                                          # air drawn in before the two reveals
     rw = load('reverse-whoosh-long-soft', -15); put(fx, rw, t0 - 1.192)
