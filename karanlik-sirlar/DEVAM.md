@@ -19,7 +19,7 @@ Sinematik Anadolu korku belgeseli, yaklaşık 2 dk 27 sn. Metin `narration.json`
    - Rüzgâr, ateş, köpek uluması, dal çıtırtısı, balta, ayak sesleri ve gerilim müziği sentezle üretilir.
    - Vurgular `video-toolkit/sfx` (CC0) kitinden gelir.
    - Kritik cümlelerden önce kısa sessizlikler var.
-5. **Mastering:** `scripts/master.py` → `out/audio/master.wav` (−14 LUFS, en fazla −1,9 dBTP).
+5. **Mastering:** `scripts/master.py` → `out/audio/master.wav` (−14 LUFS, tepe en fazla −1,8 dBTP).
 6. **Altyazı:** `scripts/srt.py` → `out/yahyalinin-karanlik-sirlari.srt`.
 7. **Birleştirme:** kareler ve ses ffmpeg ile birleştirilir; altyazı ayrıca kapatılabilir iz olarak eklenir.
 
