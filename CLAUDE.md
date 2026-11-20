@@ -1,5 +1,15 @@
 # Claude için çalışma notları
 
+## Onay sorma
+Kullanıcı ara onay istemiyor: kararları kendin ver, en iyi seçeneği seçip işi sonuna kadar götür, sonunda ne yaptığını kısaca bildir.
+- İstisnalar:
+  - Ücret doğurabilecek adımlar (ücretli hesap açma, API anahtarı isteme, ücretli servis kullanma)
+  - Sistemin kendi izin pencereleri
+- Ücretsiz ve açık lisanslı araçları tercih et.
+
+## Hazır 3B hikâye hattı
+`karanlik-sirlar/`: three.js ile gece/yayla dünyası, Chatterbox seslendirme, sentez ses tasarımı ve mastering. Adımlar `karanlik-sirlar/DEVAM.md` içinde. Yahyalı'nın başka rivayetleri için bu dünyayı ve hattı yeniden kullan.
+
 ## Skill'ler: her işte kullan
 Kullanıcı, `.claude/skills/` altındaki skill'lerin **tüm video ve diğer işlerinde** kullanılmasını istiyor (liste: `.claude/skills/README.md`).
 - Bir işe başlamadan önce işe uyan skill'i bul ve onun `SKILL.md` talimatlarını izle. Birden fazla skill uyuyorsa birlikte kullan.
