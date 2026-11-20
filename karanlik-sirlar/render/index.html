@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Kanlı Ardıç render</title>
+<link rel="stylesheet" href="node_modules/@fontsource/cinzel/400.css">
+<link rel="stylesheet" href="node_modules/@fontsource/cinzel/600.css">
+<link rel="stylesheet" href="node_modules/@fontsource/cinzel/700.css">
+<link rel="stylesheet" href="node_modules/@fontsource/cormorant-garamond/400.css">
+<link rel="stylesheet" href="node_modules/@fontsource/cormorant-garamond/400-italic.css">
+<link rel="stylesheet" href="node_modules/@fontsource/cormorant-garamond/500.css">
+<link rel="stylesheet" href="node_modules/@fontsource/montserrat/300.css">
+<style>
+html,body{margin:0;background:#000;overflow:hidden;width:1920px;height:1080px}
+#stage{position:absolute;left:0;top:138px;width:1920px;height:804px;overflow:hidden;background:#000}
+#c{display:block;width:1920px;height:804px}
+.ov{position:absolute;left:0;width:1920px;text-align:center;color:#e9e2d2;opacity:0;pointer-events:none;will-change:opacity,transform}
+#title{top:395px;font-family:'Cinzel',serif;font-weight:600;font-size:76px;letter-spacing:.16em;text-shadow:0 0 30px rgba(0,0,0,.9),0 0 4px rgba(0,0,0,.8)}
+#title small{display:block;font-family:'Cormorant Garamond',serif;font-weight:400;font-style:italic;font-size:34px;letter-spacing:.06em;margin-top:18px;color:#cfc6b4;text-transform:none}
+#chapter{top:430px;font-family:'Cinzel',serif;font-weight:700;font-size:64px;letter-spacing:.32em;color:#e4dccb}
+#chapter .rule{display:block;width:420px;height:1px;margin:24px auto 18px;background:linear-gradient(90deg,transparent,#9a2a22,transparent)}
+#chapter small{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:36px;letter-spacing:.08em;color:#bdb4a2}
+#note{top:870px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;letter-spacing:.04em;color:#c9c0ae}
+#tag{top:60px;font-family:'Montserrat',sans-serif;font-weight:300;font-size:20px;letter-spacing:.5em;color:#a49c8c}
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="c" width="1920" height="804"></canvas></div>
+<div id="title" class="ov">YAHYALI'NIN KARANLIK SIRLARI<small>Kayseri · Toros Dağları</small></div>
+<div id="chapter" class="ov">KANLI ARDIÇ<span class="rule"></span><small>Bir halk rivayeti</small></div>
+<div id="note" class="ov">Bu hikâye, Yahyalı'da anlatılan bir halk rivayetidir.</div>
+<div id="tag" class="ov">BİR HALK RİVAYETİ</div>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
