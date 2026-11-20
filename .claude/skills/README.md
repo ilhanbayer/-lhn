@@ -23,6 +23,17 @@ Video işlerinde önce `tr-video-production` okunur (araç seçimi, ses, masteri
 
 Her klasördeki `LICENSE*` dosyası o skill'in lisansıdır.
 
+## YouTube ajan paketi
+| Skill'ler | Kaynak | Lisans |
+|---|---|---|
+| `yt-script`, `yt-package`, `yt-edit`, `yt-comment`, `yt-plan`, `yt-viral`, `yt-retention`, `yt-shorts`, `yt-seo`, `yt-chapters`, `yt-audit` | [Jakeschincariol/youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill) `a2feb21` | MIT |
+
+- **Yerel değişiklik:** `yt-script/hookscore.py`, `yt-script/hooks.json`, `yt-package/title.py` ve `yt-viral/swipe.py` Türkçe metni de değerlendirir.
+  - Türkçe harfler sadeleştirilerek kelimelere ayrılır (ş→s, ı→i...).
+  - Hitap, bedel ve merak için Türkçe kalıplar var; her formülün yanında Türkçe `match_tr` kalıpları duruyor.
+  - İngilizce sonuçlar değişmedi.
+- **Ses profili:** kanalın ses profili `.claude/youtube/voice.md` içinde. Skill'ler `~/.claude/youtube/voice.md` dosyasını okur; oturum başında oraya kopyalanır.
+
 **Kurulu değil, gerektiğinde eklenir:**
 - **Remotion'ın resmî skill'leri:** depoda lisans dosyası yok, bu yüzden kopyalanmadı. Kurulum: `npx skills add remotion-dev/skills`. Remotion, şirketlerde ücretli lisans isteyebilir.
 - **OpenMontage** (calesthio/openmontage): AGPL lisanslı tam bir video ajanı sistemi.

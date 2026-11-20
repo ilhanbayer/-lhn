@@ -15,6 +15,9 @@ Kullanıcı, `.claude/skills/` altındaki skill'lerin **tüm video ve diğer iş
 - Bir işe başlamadan önce işe uyan skill'i bul ve onun `SKILL.md` talimatlarını izle. Birden fazla skill uyuyorsa birlikte kullan.
 - Harici hesap veya API anahtarı isteyen skill'lerde (Composio/Rube, ElevenLabs, HeyGen, Pexels, Cloudinary, LangSmith…) kullanıcıya sormadan kurulum yapma, anahtar isteme.
 - `video-downloader` ile indirilen videoları yalnızca referans ve inceleme için kullan. Telifli içeriği izinsiz olarak videolara koyma.
+- YouTube paketi (`/yt-script`, `/yt-package`, `/yt-seo`, `/yt-chapters`, `/yt-shorts`...): Türkçe puanlama destekli.
+  - Kullanmadan önce kanalın ses profilini yerine koy: `mkdir -p ~/.claude/youtube && cp .claude/youtube/voice.md ~/.claude/youtube/`
+  - Yeni videolardan öğrendiklerini `.claude/youtube/voice.md` dosyasına işle.
 
 ## Video işleri
 - **Her video, animasyon, film veya tanıtım işinde önce `tr-video-production` skill'ini oku.** Hangi işte hangi aracın kullanılacağını ve teslim standardını o belirler. Medya ve ses kaynakları için `free-media-sources` skill'ine bak.
